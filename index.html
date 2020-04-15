@@ -39,9 +39,11 @@
         </button>
     </nav>
 
+
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
+         
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
@@ -74,7 +76,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
    
 
@@ -90,13 +92,104 @@
                         <img src="__img/img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-block nav-link btn-warning" href="#reserve" role="button"
-                    data-toggle="tooltip" data-html="true"  title="Or Call us at  +852 12345678"
+                    <a class="btn btn-block nav-link btn-warning" href="#exampleModal" role="button"
+                    data-toggle="modal" data-html="true"  title="Or Call us at  +852 12345678"
                         data-placement="bottom" > Reserve Table</a>
             </div>
             </div>
         </div>
     </header>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reserve A Table</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <form>
+                          <div class="row">
+                              <div class="col-sm-2">
+                                  Number of Guests
+                              </div>
+                              <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      1
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      2
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      3
+                                    </label>
+                                  </div>
+                              </div>
+                              <div class="col-sm-1">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                      4
+                                    </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col-sm-2">
+                                Section
+                            </div>
+                            <div class="col-sm-6 btn-group" role="group">
+                            <button type="button" class="btn btn-primary ml-0">NoSmoking</button>
+                            <button type="button" class="btn btn-danger">Smoking</button>
+                            </div>
+                            </div>
+                            <br>
+                          <div class="row">
+                            <div class="col-sm-2">
+                               Date And Time
+                            </div>
+                            <div class="col-xs col-sm-5">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="Date" class="sr-only">Date</label>
+                                    <input type="date" class="form-control ml-0" id="Date" placeholder="Date">
+                                  </div>
+                            </div>
+                            <div class=" col-xs col-sm-5">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <label for="Time" class="sr-only">Time</label>
+                                    <input type="time" class="form-control" id="Time" placeholder="time">
+                                  </div>
+                            </div>
+                        </div>
+                        <br>
+                       <div class="col-sm-4 btn-group" role="group">
+                        <a href="#" class="btn btn-primary">Reserve</a>
+                        <a href="#" class="btn btn-secondary">cancel</a>
+                        </div>
+                      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
         <div class="row row-content">
            <div class="col">
@@ -145,7 +238,6 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-               
             </div>
     </div> 
 
@@ -315,11 +407,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
